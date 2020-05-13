@@ -5,10 +5,14 @@ var path = require('path')
 var css = path.join(__dirname, 'components/css')
 var img = path.join(__dirname, 'components/img')
 var templates = path.join(__dirname, 'src/templates')
+var assets = path.join(__dirname, 'assets')
+
 
 // Loads the static file into the app
 app.use('/',express.static(css))
 app.use('/',express.static(img))
+app.use('/',express.static(assets))
+
 
 
 app.get('/', (req, res)=>{
