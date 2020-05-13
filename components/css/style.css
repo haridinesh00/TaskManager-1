@@ -1,66 +1,76 @@
 body {
-  background-image: url("bck.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  align-self: center;
+	  	background-image: url('sergey.jpg');
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+  		background-size: cover;
+  		align-self: center;
+			}
+		#tit{
+			border-radius: 5px;
+			width: 15%;
+			height: 30%;
+		}	
+		textarea{
+			border-radius: 10px;
+		}
+		button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		}
+		@media (max-width: 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    
 }
-#tit {
-  border-radius: 5px;
-  width: 15%;
-  height: 30%;
+nav{
+  width: 100%;
 }
-textarea {
-  border-radius: 10px;
+#wel{
+  font-size:8vw;
 }
-button {
-  background-color: #4caf50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-p {
-  font-size: 100px;
+#box{
+  top: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+  max-height: 100%;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 
 .content {
   position: fixed;
-  top: 300px;
+  top: 40%;
   color: #f2f2f2;
   width: 100%;
   padding: 20px;
   text-shadow: 2px 2px 4px #000000;
 }
-#mainbut {
+#mainbut{
   position: fixed;
-  top: 600px;
-  left: 700px;
+  bottom: 10%;
+  width: 100%;
 }
-#new {
+#new{
   margin-right: 30px;
   border-radius: 10px;
 }
-#old {
+#old{
   margin-right: 30px;
   border-radius: 10px;
 }
-#about {
+#about{
   border-radius: 10px;
+}
+#tasksub{
+	border-radius: 10px;
 }

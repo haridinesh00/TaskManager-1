@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD:src/templates/index.html
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -10,13 +11,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+=======
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+>>>>>>> 17d4f59d1390e63b103f2710bc2abc7383174afb:index.html
 </head>
+
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">TaskMan</a>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light">
+        <div class="container"><a class="navbar-brand" href="#"><strong>TaskMan</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="newtask.html">New Task</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="currenttask.html">Your Tasks</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">More</a></li>
+                </ul>
+            </div>
         </div>
+<<<<<<< HEAD:src/templates/index.html
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="newtask.html">Add Tasks</a>
@@ -29,22 +58,88 @@
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
       </div>
+=======
+>>>>>>> 17d4f59d1390e63b103f2710bc2abc7383174afb:index.html
     </nav>
-<video autoplay muted loop id="myVideo">
-  <source src="phone.mov" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <center><p>Welcome to TaskMan!!!</p>
-    <h3>Your daily task companion.......</h3>
-  </center>
-</div>
-<center>
-<form action="#" id="mainbut">
-  <button formaction="newtask.html" type="submit" id="new"><b>New Task</b></button>
-  <button formaction="currenttask.html" type="submit" id="old"><b>Your Tasks</b></button>
-  <button formaction="about.html" type="submit" id="about"><b>About Us</b></button>
-</form></center>
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>Welcome to TaskMan!!!</h1>
+            <p>Your Daily Tasks companion...<br></p>
+            <p><a class="btn btn-primary" role="button">Learn more</a></p>
+        </div>
+    </div>
+    <div class="card"><img class="card-img w-100 d-block">
+        <div class="card-img-overlay"></div>
+    </div>
+    <div class="container site-section" id="welcome">
+        <h1>Do more with TaskMan :)</h1>
+        <p>TaskMan is an application that allows users to manage their daily tasks. It helps user to schedule their tasks for a specific date and time.</p>
+    </div>
+    <div class="dark-section">
+        <div class="container site-section" id="why">
+            <h2>Why Choose Us?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 item"><i class="fa fa-user" id="icon1"></i>
+                    <h2>Easy</h2>
+                    <p>This application is easy to use and heavily user friendly</p>
+                </div>
+                <div class="col-md-4"><i class="fa fa-lock" id="icon1"></i>
+                    <h2 id="easy"></h2>
+                    <h2>Secure</h2>
+                    <h2></h2>
+                    <p>This application is easy to use and heavily user friendly</p>
+                </div>
+                <div class="col"><i class="fas fa-business-time" id="icon1"></i>
+                    <h2 id="easy">Time Saving</h2>
+                    <p>This application is easy to use and heavily user friendly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Subscribe for our Newsletter</h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <form class="form-inline" method="post">
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>JAHA</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">JAHA© 2020</p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
