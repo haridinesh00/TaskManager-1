@@ -1,5 +1,5 @@
 body {
-	  	background-image: url('bck.png');
+	  	background-image: url('sergey.jpg');
 	  	background-repeat: no-repeat;
 	  	background-attachment: fixed;
   		background-size: cover;
@@ -23,3 +23,54 @@ body {
 		  display: inline-block;
 		  font-size: 16px;
 		}
+		@media (max-width: 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    
+}
+nav{
+  width: 100%;
+}
+#wel{
+  font-size:8vw;
+}
+#box{
+  top: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+  max-height: 100%;
+}
+
+
+.content {
+  position: fixed;
+  top: 40%;
+  color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+#mainbut{
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
+}
+#new{
+  margin-right: 30px;
+  border-radius: 10px;
+}
+#old{
+  margin-right: 30px;
+  border-radius: 10px;
+}
+#about{
+  border-radius: 10px;
+}
+#tasksub{
+	border-radius: 10px;
+}
