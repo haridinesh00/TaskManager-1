@@ -62,6 +62,7 @@ app.get('/currenttask.html', (req, res) => {
 
 app.post('/currenttask.html', (req, res) => {
 	id = req.query.q
+	dbScripts.delete(id)
 	res.redirect('/currenttask.html')
 })
 
