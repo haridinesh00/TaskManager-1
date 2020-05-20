@@ -53,7 +53,6 @@ app.get('/currenttask.html', (req, res) => {
 		cursor.forEach(function (task, err) {
 			if (err) throw err
 			TaskList.push(task)
-			console.log(task)
 		}, function () {
 			db.close()
 			res.render(path.join(templates + '/currenttask'), { tasks: TaskList })
@@ -63,8 +62,6 @@ app.get('/currenttask.html', (req, res) => {
 
 app.post('/currenttask.html', (req, res) => {
 	id = req.query.q
-	dbScripts.delete(id)
-	console.log(id)
 	res.redirect('/currenttask.html')
 })
 

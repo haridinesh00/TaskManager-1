@@ -4,7 +4,6 @@ exports.createDB = () => {
 
     client.connect(url, (err, db) => {
         if (err) throw err
-        console.log('Database created')
         db.close()
     })
 }
@@ -19,7 +18,6 @@ exports.collection = () => {
         var dbo = db.db('Taskmanager')
         dbo.createCollection("tasks", (err, res) => {
             if(err) throw err
-            console.log("Collection created")
         })
     })
 }
@@ -35,7 +33,6 @@ exports.insert = (tId, tDesc, tCompletion) => {
         var dbo = db.db('Taskmanager')
         dbo.collection('tasks').insertOne(obj, (err, res) => {
             if (err) throw err
-            console.log('inserted data')
             db.close()
         })
     })
@@ -52,7 +49,6 @@ exports.delete = (id) => {
         query = {_id : new ObjectId(id)}
         dbo.collection('tasks').deleteOne(query, function(err, obj){
             if(err) throw err
-            console.log("deleted record")
             db.close()
         })
     })
