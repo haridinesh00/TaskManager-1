@@ -12,13 +12,15 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light">
-        <div class="container"><a class="navbar-brand" href="#"><strong>TaskMan</strong></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
+        <div class="container"><a class="navbar-brand" href="#"><strong>TaskMan</strong></a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#">New Task</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="currenttask.html">Your Tasks</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="currenttask.html">Your Tasks</a>
+                    </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">More</a></li>
                 </ul>
@@ -28,14 +30,15 @@
     <div id="promo1">
         <div class="jumbotron1">
             <h3>Add new tasks</h3>
-            <form id="mainform">
+            <form action="/newtask.html" method="POST" id="mainform">
                 <h4>Title:</h4>
                 <div class="input-group mb-3">
-                    <input class="form-control" type="text" id="tasktitle" required=""></div><br>
+                    <input class="form-control" type="text" name="tasktitle" id="tasktitle" required=""></div><br>
                 <h4>Description:</h4>
-                <div class="field"><textarea class="form-control" name="float-textarea" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div><br>
-                <h5>Pick a date and time:</h5><input id="datepic" class="form-control" type="date"><br>
-                <input type="submit" name="tsksub" value="Submit">
+                <div class="field"><textarea class="form-control" name="description" id="float-textarea"
+                        style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "></textarea></div><br>
+                <h5>Pick a date and time:</h5><input name="date" id="datepic" class="form-control" type="date"><br>
+                <button>Submit</button>
             </form>
         </div>
     </div>
