@@ -46,15 +46,16 @@
         <div class="container">
           <div class="row">
             <% tasks.forEach(function(posts){ %>
-            <form  action="/currenttask.html?q=<%=posts._id%>" method="POST">
-              <div style="border: 1px solid black;">
-                <div>
-                  <strong><%= posts.Id %></strong>
-                  <p><%= posts.Desc %></p>
-                  <button>Done</button>
-                </div>
-              </div>
-              <% }) %>
+            <div class="col-md-5 taskList">
+              <form action="/currenttask.html?q=<%=posts._id%>" method="POST">
+                <strong>
+                  <h3><%= posts.Id %></h3>
+                </strong>
+                <p><%= posts.Desc %></p>
+                Due : <span><%= posts.Date %></span>
+                <button>Done</button>
+            </div>
+            <% }) %>
           </div>
           </form>
         </div>

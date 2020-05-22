@@ -34,7 +34,7 @@ app.post('/newtask.html', (req, res) => {
 	var title = req.body.tasktitle
 	var description = req.body.description
 	var date = req.body.date
-	dbScripts.insert(title, description, false)
+	dbScripts.insert(title, description, date, false)
 	res.sendFile(path.join(templates + '/newtask.html'))
 })
 

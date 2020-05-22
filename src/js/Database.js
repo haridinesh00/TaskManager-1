@@ -22,10 +22,10 @@ exports.collection = () => {
     })
 }
 
-exports.insert = (tId, tDesc, tCompletion) => {
+exports.insert = (tId, tDesc, tDate, tCompletion) => {
     var client = require('mongodb').MongoClient
     var url = 'mongodb://localhost:27017/'
-    var obj = { Id : tId, Desc : tDesc, Completion : tCompletion }
+    var obj = { Id : tId, Desc : tDesc, Date: tDate, Completion : tCompletion }
     client.connect(url, (err, db) => {
         if(err){
             throw err
